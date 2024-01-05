@@ -56,7 +56,7 @@ jobs:
         env:
           DBT_PROFILES: ${{ secrets.DBT_PROFILES }}
       - name: dbt-docs-to-notion
-        uses: rfdearborn/dbt-docs-to-notion@v1.0.9
+        uses: soundtrackyourbrand/dbt-docs-to-notion@v0.0.1
         with:
           dbt-package: 'dbt-bigquery==1.0.0'
           dbt-profile-path: './'
